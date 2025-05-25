@@ -11,6 +11,7 @@ def index(request):
 
 @login_required
 def search_contacts(request):
+
     query = request.GET.get('search', '')
 
     # use the query to filter contacts by name or email
